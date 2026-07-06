@@ -470,12 +470,12 @@ img { max-width: 100%; display: block; }
 }
 
 .service-card__list li::before {
-  content: '—';
+  content: '·';
   position: absolute;
   left: 0;
   color: var(--rose);
-  font-size: 0.6rem;
-  top: 0.2em;
+  font-size: 0.85rem;
+  top: 0em;
 }
 
 /* ===========================

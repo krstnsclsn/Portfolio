@@ -414,10 +414,6 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--border-subtle);
 }
 
-/* last card (7th) spans full width */
-.services__grid .service-card:last-child {
-  grid-column: 1 / -1;
-}
 
 .service-card {
   background: var(--bg-2);

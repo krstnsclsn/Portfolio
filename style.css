@@ -408,7 +408,7 @@ img { max-width: 100%; display: block; }
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border-subtle);
   border: 1px solid var(--border-subtle);
@@ -1020,7 +1020,6 @@ img { max-width: 100%; display: block; }
    RESPONSIVE
 =========================== */
 @media (max-width: 1024px) {
-  .services__grid { grid-template-columns: repeat(2, 1fr); }
   .testimonials__grid { grid-template-columns: 1fr; }
 }
 
@@ -1053,7 +1052,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 600px) {
   .container { padding: 0 1.25rem; }
   .section { padding: 5rem 0; }
-  .services__grid { grid-template-columns: 1fr; }
+  .services__grid { grid-template-columns: 1fr !important; }
   .service-card { padding: 2rem; }
   .testimonials__grid { grid-template-columns: 1fr; }
   .footer__inner { flex-direction: column; gap: 0.5rem; text-align: center; }

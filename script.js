@@ -29,6 +29,7 @@ burger.addEventListener('click', () => {
 document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
   });
 });
 

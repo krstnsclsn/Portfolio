@@ -18,7 +18,7 @@
   --rose-dark: #a85f6e;
   --rose-glow: rgba(201, 123, 138, 0.12);
   --text: #e8dcd8;
-  --text-muted: #7a6a68;
+  --text-muted: #a1908c;
   --border: rgba(201, 123, 138, 0.18);
   --border-subtle: rgba(255, 255, 255, 0.06);
 
@@ -47,6 +47,23 @@ body {
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 1000;
+  background: var(--rose);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
 
 /* ===========================
    TYPOGRAPHY
@@ -413,7 +430,6 @@ img { max-width: 100%; display: block; }
   background: var(--border-subtle);
   border: 1px solid var(--border-subtle);
 }
-
 
 .service-card {
   background: var(--bg-2);
@@ -959,16 +975,6 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
   margin: 1.5rem 0 0.75rem;
 }
-
-.contact__phone {
-  font-family: var(--font-serif);
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: var(--cream-muted);
-  transition: color 0.2s;
-}
-
-.contact__phone:hover { color: var(--rose); }
 
 /* ===========================
    FOOTER

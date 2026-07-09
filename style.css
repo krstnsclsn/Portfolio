@@ -801,8 +801,8 @@ img { max-width: 100%; display: block; }
 }
 
 .tools-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-top: 1px solid var(--border-subtle);
 }
 
